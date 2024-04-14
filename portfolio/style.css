@@ -1,0 +1,122 @@
+*{box-sizing: border-box;   font-family: "Fira Sans", sans-serif;}
+body{margin: 0;}
+h1{font-size: 2.2rem; text-align: center;}
+h2{font-size: 2.2rem; text-align: center;}
+.dotted-hr{border: dotted 6px purple; border-bottom: none;
+margin: 20px auto}
+a{font-size: 1.2rem; text-decoration: none; color: darkred;}
+/* for desktop */
+[class*=col-]{float: left; padding: 10px;}
+/* for mobile */
+[class*=col-]{width: 100%;}
+.navbar{background-color: #0c6168; padding: 1% 7%; }
+.navbar::after{content: ''; display: table; clear: both;}
+
+.navbar h1{margin: 0; padding-top: 10px;}
+
+.navbar-menu{display: flex;  flex-direction: column; justify-content: end;}
+
+.navbar-menu a{background-color: #408686; margin: 7px 0; 
+    padding: 20px; border-radius: 10px;}
+
+.navbar-menu a:hover{background-color:yellow;}
+/* navbar end */
+    
+
+.profile{padding: 130px 10px; position: relative; background-color: yellowgreen;
+text-align: center;}
+.profile .top-weather-icon{position: absolute; 
+right: 10px; top: 0; transition: transform 2s; width: 120px;
+}
+.profile .top-weather-icon:hover{transform: rotate(360deg);
+}
+ .profile-desc h1{font-family: "Satisfy", cursive; font-size: 3rem;}
+ .profile-desc p{color: blue; text-align: center; width: 90%; 
+    margin: 0 auto 20px auto;}
+    .profile .bottom-weather-icon{position: absolute; 
+        left: 30px; bottom: 20px; width: 120px;}
+.profile .bottom-weather-icon:hover{transform: scale(2);}       
+.profile::after{content: ''; display: table; clear: both; transition: transform 2s;}
+/* profile end */
+
+   .about-me{background-color: #039a4a; padding: 1% 7%; text-align: center;
+    font-family: "Montserrat", sans-serif; }
+    .aboutme-image img{border: 0px solid maroon; padding: 10px;
+         border-radius: 50%; width: 200px; height: 220px;}
+    .about-me p{text-align: center;}
+    .about-me a{font-size: 1.2rem;}
+    .about-me::after{clear: both; content: ''; display: table;} 
+    .cv-button{background-color: #052d; color: antiquewhite; border: none;
+    border-radius: 10px; cursor: pointer;} 
+    /* work experience end */
+    
+    .professional-experience{padding: 1% 0;}
+    .professional-experience .card{background-color: darkgray;
+    padding: 10px; border-radius: 5px; transition: 3s; text-align: center;}
+    .professional-experience .card:hover{box-shadow: 0 4px 8px 8px#0c6168;}
+    .card-icon{text-align: center;}
+    .card-icon img{width: 80px; margin-top: 20px; }
+    .card-title h2{background-color: grey;}
+    .rounded-img{border: 5px solid yellowgreen;border-radius: 50%; width: 150PX;}
+    /* education end */
+
+    .skills-container{padding-right: 40px;}
+    .skills-container li{list-style: none; text-transform: uppercase; font-weight: bolder;
+    margin: 30px 10px; position: relative;}
+    .skills-container li::before{content: ''; position: absolute;
+    background-color: rgb(112, 112, 33); top:calc(100% + 5px); width: 100%; height: 20px;
+left: 0; border-radius: 1000px;}
+.skills-container li::after{content: ''; position: absolute; background-color: plum;
+left: 0; width: 0; height: 20px; top: calc(100% + 5px); border-radius: 1000px;
+
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-fill-mode:forwards ;}
+.skills-container .html::after{animation-name: html;}
+@keyframes html{
+    to{width: 90%;}
+}
+.skills-container .css::after{animation-name: css;}
+@keyframes css{
+    to{width: 70%;}
+}
+.skills-container .javascript::after{animation-name: javascript;}
+@keyframes javascript{
+    to{width: 60%;}
+}
+.skills-container .github::after{animation-name: github;}
+@keyframes github{
+    to{width: 80%;}
+}
+/* skills end */
+
+.achivement-contract{ background-color: #39a4ac; padding: 1% 7%; top: 0;
+    color: darkblue;}
+.contract{padding: 1% 7%; text-align: center;}
+.achivement-contract::after{clear: both; display: table; content: '';}
+.contract input,textarea{width: 100%; text-align: center; border-radius: 5px;
+padding: 10px; border: none; resize: none;}
+.contract button{border: none; border-radius: 15px; 
+    background-color: #052d2f; color: wheat; cursor: pointer; padding: 15px;
+width: 100%; margin: 10px;}
+
+.contract-links{text-align: center;}
+.media-button .btn{border: none; border-radius: 25px;
+    padding: 5px; width: 50px; font-size: 32px;
+margin: 10px; cursor: pointer; background-color: wheat;}
+.btn:hover{background-color: gray;}
+
+
+/* contract end */
+
+.footer{background-color: black; color: whitesmoke; padding: 10px; font-size: 1rem;}
+.footer-menu a{display: inline; margin: 2px;}
+.footer::after{display: table; clear: both; content: '';}
+.footer-menu a:hover{background-color: white;}
+
+
+         
+
+    
